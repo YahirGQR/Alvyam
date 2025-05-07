@@ -26,50 +26,40 @@ body {
 
 header {
   background-color: var(--accent-color);
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
+  position: relative;
 }
 
-/* Flexbox para logo + texto */
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 1rem;
-}
-
-/* Logo más visible */
+/* Logo a la izquierda absoluta */
 .logo {
-  height: 90px; /* Tamaño mayor */
+  height: 90px;
   width: auto;
   border-radius: 10px;
-  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
 }
 
-/* Contenedor del texto junto al logo */
+/* Centrado del bloque de texto */
 .header-text {
-  text-align: left;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Título principal */
+/* Título grande y blanco */
 .header-text h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin: 0;
-  color: white; /* Título en blanco */
+  color: white;
 }
 
-/* Subtítulo */
+/* Subtítulo con color oscuro */
 .header-text p {
-  font-size: 1rem;
-  margin-top: 0.3rem;
-  color: white; /* Mismo color que el título */
-}
-
-.header-text h1,
-.header-text p {
-  color: var(--accent-color);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: var(--text-color);  /* texto oscuro adaptado al modo claro/oscuro */
 }
 
 nav {
