@@ -32,8 +32,8 @@ header {
 
 .header-flex {
   display: flex;
-  align-items: center;        /* centra verticalmente */
-  justify-content: flex-start;
+  align-items: center;         /* centra logo y texto verticalmente */
+  justify-content: flex-start; /* logo a la izquierda, texto al lado */
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
@@ -48,15 +48,13 @@ header {
 }
 
 .header-text {
-  flex: 2;                    /* toma el resto del espacio */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;    /* centra verticalmente los textos */
+  flex: 1;                     /* ocupa todo el espacio disponible */
+  text-align: center;          /* centra los textos dentro del bloque */
 }
 
 .header-text h1 {
-  font-family: 'Poppins', sans-serif;  /* nueva fuente minimalista */
-  font-size: 3 rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
   margin: 0;
   color: var(--accent-color);
 }
@@ -70,6 +68,7 @@ header {
 body.dark-mode .header-text p {
   color: #f0f0f0;
 }
+
 
 nav {
   background-color: var(--nav-bg);
