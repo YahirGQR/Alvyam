@@ -31,8 +31,8 @@ header {
 
 .header-flex {
   display: flex;
-  align-items: center;         /* alinea verticalmente logo + textos */
-  justify-content: flex-start; /* logo a la izquierda, texto a la derecha */
+  align-items: center;         /* centra logo y texto verticalmente */
+  justify-content: flex-start; /* logo a la izquierda, texto al lado */
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
@@ -47,9 +47,8 @@ header {
 }
 
 .header-text {
-  max-width: 400px;            /* limite de ancho para no estirarse demasiado */
-  margin-left: 0.5rem;         /* empujamos apenas a la izquierda */
-  text-align: center;          /* textos centrados dentro del bloque */
+  flex: 1;                     /* ocupa todo el espacio disponible */
+  text-align: center;          /* centra los textos dentro del bloque */
 }
 
 .header-text h1 {
