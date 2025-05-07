@@ -2,7 +2,7 @@
   --bg-color: #ffffff;
   --text-color: #222222;
   --accent-color: #4CAF50;
-  --section-bg: #ffffff;
+  --section-bg: #ffffff;     /* ← blanco real en modo claro */
   --nav-bg: #ffffff;
   --nav-text: #4CAF50;
 }
@@ -28,47 +28,32 @@ header {
   background-color: var(--accent-color);
   color: white;
   padding: 1.5rem 1rem;
+  text-align: center;
 }
 
-/* Contenedor principal del encabezado */
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background-color: #1e1e1e; /* Fondo oscuro */
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  max-width: 80%;
-  margin: 2rem auto;
+  justify-content: center; /* ← CENTRA horizontalmente */
+  flex-direction: column;  /* ← APILA logo + textos verticalmente */
+  text-align: center;
+  gap: 1rem;
 }
 
-/* Logo alineado a la izquierda */
 .logo {
   height: 70px;
-  margin-right: 1.5rem;
+  width: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
-/* Texto del encabezado */
-.header-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff; /* Texto blanco */
-}
-
-/* Título "ALVYAM" */
 .header-text h1 {
-  font-size: 2rem;
-  margin: 0;
-  color: #a6e3a1; /* Verde claro visible sobre fondo oscuro */
+  margin-bottom: 0.5rem;
 }
 
-/* Subtítulo */
-.header-text p {
+.header-flex p {
   font-size: 1rem;
-  margin: 0.3rem 0 0 0;
-  color: #ffffff; /* Blanco para visibilidad */
+  margin-top: 0.3rem;
 }
 
 nav {
@@ -107,7 +92,7 @@ nav ul li a:hover {
   padding: 2rem 2rem;
   max-width: 1000px;
   margin: 2rem auto;
-  background-color: var(--section-bg);
+  background-color: var(--section-bg);  /* ← ahora blanco puro en modo claro */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   border-left: 5px solid var(--accent-color);
@@ -172,4 +157,4 @@ footer {
   object-fit: contain;
   max-height: 300px;
   margin-bottom: 1rem;
-}
+} 
