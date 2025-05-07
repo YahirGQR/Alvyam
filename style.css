@@ -27,36 +27,48 @@ body {
 header {
   background-color: var(--accent-color);
   color: white;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 1rem;
-  max-width: 1000px;
-  margin: auto;
 }
 
 .logo {
-  height: 80px;
+  height: 100px; 
   width: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   flex-shrink: 0;
 }
 
-.header-text {
-  text-align: left;
-  flex: 1;
+.header-flex h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.header-flex p {
+  font-size: 1rem;
+  margin-top: 0.3rem;
 }
 
 .header-text h1 {
   font-size: 2.8rem;
   margin: 0;
-  color: white;
+  color: var(--text-color);
 }
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
 
 .header-text p {
   font-size: 1.2rem;
@@ -97,13 +109,17 @@ nav ul li a:hover {
 }
 
 .container {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   max-width: 1000px;
   margin: 2rem auto;
   background-color: var(--section-bg);
-  border-left: 4px solid var(--accent-color);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--accent-color);
+}
+
+section.container + section.container {
+  margin-top: 2rem;
 }
 
 h1, h2 {
