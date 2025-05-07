@@ -28,6 +28,7 @@ header {
   background-color: var(--accent-color);
   color: white;
   padding: 1.5rem 1rem;
+  text-align: center;
 }
 
 .header-flex {
