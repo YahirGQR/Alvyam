@@ -1,4 +1,3 @@
-/* style.css actualizado */
 :root {
   --bg-color: #ffffff;
   --text-color: #222222;
@@ -32,8 +31,8 @@ header {
 
 .header-flex {
   display: flex;
-  align-items: center;         /* centra logo y texto verticalmente */
-  justify-content: flex-start; /* logo a la izquierda, texto al lado */
+  align-items: center;         /* alinea verticalmente logo + textos */
+  justify-content: flex-start; /* logo a la izquierda, texto a la derecha */
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
@@ -48,8 +47,9 @@ header {
 }
 
 .header-text {
-  flex: 1;                     /* ocupa todo el espacio disponible */
-  text-align: center;          /* centra los textos dentro del bloque */
+  max-width: 400px;            /* limite de ancho para no estirarse demasiado */
+  margin-left: 0.5rem;         /* empujamos apenas a la izquierda */
+  text-align: center;          /* textos centrados dentro del bloque */
 }
 
 .header-text h1 {
@@ -68,7 +68,6 @@ header {
 body.dark-mode .header-text p {
   color: #f0f0f0;
 }
-
 
 nav {
   background-color: var(--nav-bg);
