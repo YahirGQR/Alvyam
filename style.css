@@ -34,10 +34,26 @@ header {
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: center; /* ← CENTRA horizontalmente */
-  flex-direction: column;  /* ← APILA logo + textos verticalmente */
+  justify-content: space-between; /* Logo izquierda, texto centrado con ayuda extra */
   text-align: center;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white; /* Contraste sobre fondo verde */
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 0;
+  color: #ffffff; /* ← Visibilidad asegurada en modo claro */
 }
 
 .logo {
@@ -45,18 +61,6 @@ header {
   width: auto;
   border-radius: 10px;
   flex-shrink: 0;
-}
-
-.header-text h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-  color: white; /* Asegura buena visibilidad sobre fondo verde */
-}
-
-.header-text p {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #f9f9f9; /* ← Asegura visibilidad incluso en modo claro */
 }
 
 .header-flex p {
