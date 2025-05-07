@@ -34,9 +34,11 @@ header {
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: center; /* ← CENTRA horizontalmente */
-  flex-direction: column;  /* ← APILA logo + textos verticalmente */
-  text-align: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
   gap: 1rem;
 }
 
@@ -47,8 +49,9 @@ header {
   flex-shrink: 0;
 }
 
-.header-text h1 {
-  margin-bottom: 0.5rem;
+.header-flex h1 {
+  font-size: 2.2rem;
+  margin: 0;
 }
 
 .header-flex p {
@@ -157,4 +160,4 @@ footer {
   object-fit: contain;
   max-height: 300px;
   margin-bottom: 1rem;
-} 
+}
