@@ -28,7 +28,6 @@ header {
   background-color: var(--accent-color);
   color: white;
   padding: 1.5rem 1rem;
-  text-align: center;
 }
 
 .header-flex {
@@ -58,16 +57,18 @@ header {
   margin-top: 0.3rem;
 }
 
-.header-text {
-  flex: 1;
-  text-align: center;
+.header-text h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  color: var(--text-color);
 }
 
-.header-text h1 {
-  font-size: 2.8rem; /* Más grande y visible */
-  margin: 0;
-  color: white;
+.header-text p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--text-color);
 }
+
 
 .header-text p {
   font-size: 1.2rem;
