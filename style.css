@@ -28,22 +28,20 @@ header {
   background-color: var(--accent-color);
   color: white;
   padding: 1.5rem 1rem;
-  text-align: center;
 }
 
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
-  text-align: left;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .logo {
-  height: 70px;
+  height: 100px; 
   width: auto;
   border-radius: 10px;
   flex-shrink: 0;
@@ -57,6 +55,23 @@ header {
 .header-flex p {
   font-size: 1rem;
   margin-top: 0.3rem;
+}
+
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 2.8rem; /* Más grande y visible */
+  margin: 0;
+  color: white;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #e0f2e9;
 }
 
 nav {
