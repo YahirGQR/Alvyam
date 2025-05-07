@@ -2,7 +2,7 @@
   --bg-color: #ffffff;
   --text-color: #222222;
   --accent-color: #4CAF50;
-  --section-bg: #f5f5f5;
+  --section-bg: #ffffff;     /* ← blanco real en modo claro */
   --nav-bg: #ffffff;
   --nav-text: #4CAF50;
 }
@@ -95,7 +95,7 @@ nav ul li a:hover {
   padding: 2rem 2rem;
   max-width: 1000px;
   margin: 2rem auto;
-  background-color: var(--section-bg);
+  background-color: var(--section-bg);  /* ← ahora blanco puro en modo claro */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   border-left: 5px solid var(--accent-color);
