@@ -49,6 +49,14 @@ header {
 
 .header-text h1 {
   margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: white; /* Asegura buena visibilidad sobre fondo verde */
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #f9f9f9; /* ← Asegura visibilidad incluso en modo claro */
 }
 
 .header-flex p {
