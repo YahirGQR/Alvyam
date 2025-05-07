@@ -1,8 +1,9 @@
+/* style.css actualizado */
 :root {
   --bg-color: #ffffff;
   --text-color: #222222;
   --accent-color: #4CAF50;
-  --section-bg: #ffffff;     /* ← blanco real en modo claro */
+  --section-bg: #ffffff;
   --nav-bg: #ffffff;
   --nav-text: #4CAF50;
 }
@@ -24,13 +25,11 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* Encabezado principal */
 header {
   background-color: var(--accent-color);
   padding: 1.5rem 1rem;
 }
 
-/* Flexbox para logo + texto */
 .header-flex {
   display: flex;
   align-items: center;
@@ -41,36 +40,32 @@ header {
   gap: 1rem;
 }
 
-/* Logo más visible */
 .logo {
-  height: 90px; /* Tamaño mayor */
+  height: 90px;
   width: auto;
   border-radius: 10px;
   flex-shrink: 0;
 }
 
-/* Contenedor del texto junto al logo */
 .header-text {
-  text-align: left;
+  text-align: center;  /* Centrado */
+  width: 100%;         /* Ocupa todo el ancho */
 }
 
-/* Título principal */
 .header-text h1 {
   font-size: 2.2rem;
   margin: 0;
-  color: white; /* Título en blanco */
+  color: var(--accent-color);
 }
 
-/* Subtítulo */
 .header-text p {
   font-size: 1rem;
   margin-top: 0.3rem;
-  color: white; /* Mismo color que el título */
+  color: #000000;  /* Negro fijo modo claro */
 }
 
-.header-text h1,
-.header-text p {
-  color: var(--accent-color);
+body.dark-mode .header-text p {
+  color: #f0f0f0;  /* Claro en modo oscuro */
 }
 
 nav {
@@ -109,7 +104,7 @@ nav ul li a:hover {
   padding: 2rem 2rem;
   max-width: 1000px;
   margin: 2rem auto;
-  background-color: var(--section-bg);  /* ← ahora blanco puro en modo claro */
+  background-color: var(--section-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   border-left: 5px solid var(--accent-color);
