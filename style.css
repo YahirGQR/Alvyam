@@ -29,7 +29,7 @@ body {
 /* HEADER */
 header {
   background-color: var(--accent-color);
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem; /* más padding para que respire */
 }
 
 .header-flex {
@@ -52,19 +52,19 @@ header {
 .header-text {
   flex: 1;
   text-align: center;
-  margin-left: -40px; /* mueve ligeramente a la izquierda para centrar mejor visualmente */
+  margin-left: -40px; /* ajuste visual para desktop */
 }
 
 .header-text h1 {
-  font-family: 'Poppins', sans-serif; /* tipografía minimalista y clara */
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   color: var(--accent-color);
 }
 
 .header-text p {
   font-size: 1rem;
-  margin: 0.3rem 0 0 0;
+  margin: 0;
   color: #000000;
 }
 
@@ -187,22 +187,33 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
+    padding: 1rem 0; /* más espacio entre logo y texto */
   }
 
   .header-text {
     margin-left: 0;
-    max-width: 100%;
+    padding: 0 1rem;
+    max-width: 90%;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
   }
 
   nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.7rem;
   }
 
   nav ul li {
     display: block;
-    margin: 0.3rem 0;
+    margin: 0;
+  }
+
+  nav {
+    padding: 1.5rem 0;
   }
 }
