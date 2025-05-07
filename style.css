@@ -24,10 +24,10 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+/* Encabezado principal */
 header {
   background-color: var(--accent-color);
-  padding: 2rem 1rem;
-  align-items: center;
+  padding: 1.5rem 1rem;
 }
 
 /* Flexbox para logo + texto */
@@ -41,35 +41,36 @@ header {
   gap: 1rem;
 }
 
+/* Logo más visible */
 .logo {
-  height: 90px;
+  height: 90px; /* Tamaño mayor */
   width: auto;
   border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 1.5rem;
-  transform: translateY(-50%);
+  flex-shrink: 0;
 }
 
-/* Centrado del bloque de texto */
+/* Contenedor del texto junto al logo */
 .header-text {
-  text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  text-align: left;
 }
 
-/* Título grande y blanco */
+/* Título principal */
 .header-text h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 0;
-  color: white;
+  color: white; /* Título en blanco */
 }
 
-/* Subtítulo con color oscuro */
+/* Subtítulo */
 .header-text p {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  color: var(--text-color);  /* texto oscuro adaptado al modo claro/oscuro */
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  color: white; /* Mismo color que el título */
+}
+
+.header-text h1,
+.header-text p {
+  color: var(--accent-color);
 }
 
 nav {
