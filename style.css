@@ -119,3 +119,22 @@ footer {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+}
