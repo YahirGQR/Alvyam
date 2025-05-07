@@ -2,7 +2,7 @@
   --bg-color: #ffffff;
   --text-color: #222222;
   --accent-color: #4CAF50;
-  --section-bg: #ffffff;     /* ← blanco real en modo claro */
+  --section-bg: #ffffff;
   --nav-bg: #ffffff;
   --nav-text: #4CAF50;
 }
@@ -28,32 +28,16 @@ header {
   background-color: var(--accent-color);
   color: white;
   padding: 1.5rem 1rem;
-  text-align: center;
 }
 
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Logo izquierda, texto centrado con ayuda extra */
-  text-align: center;
+  justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-}
-
-.header-text {
-  flex: 1;
-}
-
-.header-text h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: white; /* Contraste sobre fondo verde */
-}
-
-.header-text p {
-  font-size: 1.2rem;
-  margin: 0.3rem 0 0;
-  color: #ffffff; /* ← Visibilidad asegurada en modo claro */
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -63,9 +47,26 @@ header {
   flex-shrink: 0;
 }
 
-.header-flex p {
-  font-size: 1rem;
-  margin-top: 0.3rem;
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.header-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Asegura visibilidad del texto en modo claro */
+body:not(.dark-mode) .header-text p {
+  color: #222222;
 }
 
 nav {
@@ -104,7 +105,7 @@ nav ul li a:hover {
   padding: 2rem 2rem;
   max-width: 1000px;
   margin: 2rem auto;
-  background-color: var(--section-bg);  /* ← ahora blanco puro en modo claro */
+  background-color: var(--section-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   border-left: 5px solid var(--accent-color);
