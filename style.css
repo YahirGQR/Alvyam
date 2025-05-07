@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
   --bg-color: #ffffff;
   --text-color: #222222;
@@ -16,6 +17,7 @@ body.dark-mode {
   --nav-text: #81c784;
 }
 
+/* BASE */
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -24,6 +26,7 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+/* HEADER */
 header {
   background-color: var(--accent-color);
   padding: 1.5rem 1rem;
@@ -31,8 +34,8 @@ header {
 
 .header-flex {
   display: flex;
-  align-items: center;         /* centra logo y texto verticalmente */
-  justify-content: flex-start; /* logo a la izquierda, texto al lado */
+  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
@@ -47,12 +50,13 @@ header {
 }
 
 .header-text {
-  flex: 1;                     /* ocupa todo el espacio disponible */
-  text-align: center;          /* centra los textos dentro del bloque */
+  flex: 1;
+  text-align: center;
+  margin-left: -40px; /* mueve ligeramente a la izquierda para centrar mejor visualmente */
 }
 
 .header-text h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; /* tipografía minimalista y clara */
   font-size: 2.5rem;
   margin: 0;
   color: var(--accent-color);
@@ -68,6 +72,7 @@ body.dark-mode .header-text p {
   color: #f0f0f0;
 }
 
+/* NAVIGATION */
 nav {
   background-color: var(--nav-bg);
   padding: 1rem 0;
@@ -100,6 +105,7 @@ nav ul li a:hover {
   color: var(--accent-color);
 }
 
+/* SECTIONS */
 .container {
   padding: 2rem 2rem;
   max-width: 1000px;
@@ -122,6 +128,7 @@ ul, ol {
   padding-left: 1.5rem;
 }
 
+/* IMAGES */
 .imagenes {
   display: flex;
   flex-wrap: wrap;
@@ -140,6 +147,7 @@ ul, ol {
   transform: scale(1.03);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
@@ -147,6 +155,7 @@ footer {
   color: var(--text-color);
 }
 
+/* DARK MODE TOGGLE BUTTON */
 #darkModeToggle {
   position: fixed;
   bottom: 20px;
@@ -162,6 +171,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* HERO IMAGE */
 .hero img {
   width: 100%;
   height: auto;
@@ -169,4 +179,30 @@ footer {
   object-fit: contain;
   max-height: 300px;
   margin-bottom: 1rem;
+}
+
+/* RESPONSIVE (MÓVIL) */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.3rem 0;
+  }
 }
